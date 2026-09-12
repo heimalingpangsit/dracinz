@@ -1,0 +1,24 @@
+{
+  "name": "DracinTeros - Nonton Drama China Sub Indo",
+  "short_name": "DracinTeros",
+  "description": "Aplikasi Nonton Streaming Drama China & Asia Subtitle Indonesia Gratis HD.",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a0a0e",
+  "theme_color": "#0a0a0e",
+  "categories": ["entertainment", "video", "movies"],
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="id" class="bg-[#0a0a0e] text-neutral-100 dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DracinTeros - Nonton Drama China Sub Indo</title>
+    <meta name="description" content="Aplikasi Nonton Streaming Drama China & Asia Subtitle Indonesia Gratis HD." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="DracinTeros" />
+    <meta property="og:title" content="DracinTeros - Nonton Drama China Sub Indo" />
+    <meta property="og:description" content="Aplikasi Nonton Streaming Drama China & Asia Subtitle Indonesia Gratis HD." />
+    <meta property="og:image" content="https://www.gobox.my.id/file/BaKyEq9UycuA.png" />
+    <meta property="og:locale" content="id_ID" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="DracinTeros - Nonton Drama China Sub Indo" />
+    <meta name="twitter:description" content="Aplikasi Nonton Streaming Drama China & Asia Subtitle Indonesia Gratis HD." />
+    <meta name="twitter:image" content="https://www.gobox.my.id/file/BaKyEq9UycuA.png" />
+
+    <!-- PWA & Mobile Settings -->
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+    <meta name="theme-color" content="#0a0a0e" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DracinTeros" />
+  </head>
+  <body class="bg-[#0a0a0e] text-neutral-100 min-h-screen overflow-x-hidden antialiased">
+    <div id="root" class="bg-[#0a0a0e] min-h-screen"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch((err) => {
+            console.log('SW registration failed:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
